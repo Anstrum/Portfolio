@@ -34,10 +34,12 @@ header nav {
 }
 
 .nav-element {
-    width:25%;
+    width:33%;
     display:flex;
     align-items: center;
     flex-direction: column;
+    background-color:rgb(65, 64, 64) ;
+    z-index:2;
 }
 
 .nav-element h4 {
@@ -54,20 +56,34 @@ header nav {
 }
 
 .nav-element-description {
-    background-color: rgb(65, 64, 64);
+    font-size: 0.8em;
+    z-index: -1;
+    padding: 5px 0px;
+    background-color: rgb(87, 87, 87);
     flex-direction: column;
     position: fixed;
     display:flex;
     text-align: center;
-    top: 70px;
-    left: 2%;
-    width:21%;
+    top: -70px;
     border-radius: 0px 0px 5px 5px;
+    width:15%;
+    min-height: 10%;
+}
+#nav-element-description1{
+    left:9%;
+}
+#nav-element-description2{
+    left:42%;
+}
+#nav-element-description3{
+    left:75%;
 }
 
 .nav-element-description p {
-    text-decoration: white underline;
-    margin-bottom:10px;
+    margin:auto;
+}
+.nav-element-description h4 {
+    padding-bottom: 5px;
 }
 .nav-element-description ul {
     margin-left: 20%;
