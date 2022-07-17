@@ -1,6 +1,7 @@
 :root{
     --main-background-color:black;
-    --main-title-color:rgb(175, 150, 9);
+    --main-title-color: rgb(56, 69, 250);
+    --main-border-color:rgb(36, 44, 155);
     --main-text-color: white;
     --main-text-font:'Courier New', Courier, monospace;
 }
@@ -31,6 +32,7 @@ header nav {
     height:70px;
     align-items: center;
     justify-content: space-around;
+    border-bottom: 2px var(--main-border-color) solid;
 }
 
 .nav-element {
@@ -43,7 +45,7 @@ header nav {
 }
 
 .nav-element h4 {
-    text-decoration: var(--main-title-color) underline;
+    text-decoration: var(--main-border-color) underline;
     color:var(--main-text-color);
     transition: all 0.3s;  
 }
@@ -68,15 +70,16 @@ header nav {
     border-radius: 0px 0px 5px 5px;
     width:15%;
     min-height: 10%;
+    border-bottom: 2px var(--main-border-color) solid;
 }
 #nav-element-description1{
     left:9%;
 }
 #nav-element-description2{
-    left:42%;
+    left:42.5%;
 }
 #nav-element-description3{
-    left:75%;
+    left:75.5%;
 }
 
 .nav-element-description p {
@@ -90,3 +93,19 @@ header nav {
     text-align: left;
     list-style-type:none;
 }
+/* 
+.slideshow {
+    position:absolute;
+    top:0;
+    z-index: -1;
+    background-color: gray;
+    height: 100%;
+    width:100%;
+}
+.slideshow filter {
+    z-index: 2000000;
+    height: 100%;
+    width:100%;
+    display:flex;
+    background-color: rgb(0, 0, 0);
+} */
